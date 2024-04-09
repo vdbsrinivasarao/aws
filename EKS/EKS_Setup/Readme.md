@@ -26,4 +26,5 @@ Install kubectl
  curl -sL "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_checksums.txt" | grep $PLATFORM | sha256sum --check
  tar -zvxf eksctl_Linux_amd64.tar.gz
  sudo mv eksctl /usr/local/bin
+ export PATH="/usr/local/bin:$PATH"
  eksctl
